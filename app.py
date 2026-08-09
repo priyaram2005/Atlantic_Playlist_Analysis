@@ -20,29 +20,48 @@ st.set_page_config(
 st.markdown("""
 <style>
 
-/* Main background */
+/* ===========================
+   Main Background
+=========================== */
+
 .stApp {
     background-color: #f5f7fb;
 }
 
-/* Main text color */
-html, body, [class*="css"] {
+/* Default text */
+html, body {
     color: #1f2937;
 }
 
-/* Headers */
-h1 {
-    color: #0E4C92;
-    font-weight: 700;
+/* ===========================
+   Markdown Headings
+=========================== */
+
+[data-testid="stMarkdownContainer"] h1 {
+    color: #0E4C92 !important;
+    font-weight: 700 !important;
 }
 
-h2, h3 {
-    color: #184E9E;
+[data-testid="stMarkdownContainer"] h2 {
+    color: #184E9E !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stMarkdownContainer"] h3 {
+    color: #184E9E !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stMarkdownContainer"] h4,
+[data-testid="stMarkdownContainer"] h5,
+[data-testid="stMarkdownContainer"] h6 {
+    color: #184E9E !important;
 }
 
 /* Paragraph text */
-p {
-    color: #222222;
+
+[data-testid="stMarkdownContainer"] p {
+    color: #222222 !important;
 }
             
 /* ===========================
